@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fecha y Hora</title>
+<style>
+    body {
+        font-family: 'Franklin Gothic Book', sans-serif;
+        text-align: left;
+        color: white; /* Cambiar color de texto a blanco */
+    }
+    .fecha-hora {
+        font-size: 14px; /* Tamaño de fuente reducido */
+        margin-bottom: 10px; /* Margen inferior reducido */
+    }
+    .fecha-hora > span {
+        display: block; /* Para que cada línea ocupe toda la anchura */
+    }
+    #hora {
+        font-weight: bold; /* Hacer que la hora esté en negrita */
+    }
+</style>
+</head>
+<body>
+    <div class="fecha-hora">
+        <script>
+            function actualizarFechaHora() {
+                var fecha = new Date();
+                var fechaFormato = fecha.toLocaleDateString();
+                var horaFormato = fecha.toLocaleTimeString();
+                document.getElementById("fecha").innerText = fechaFormato;
+                document.getElementById("hora").innerText = horaFormato;
+            }
+            setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+            actualizarFechaHora(); // Llamar a la función para mostrar la fecha y hora inicial
+        </script>
+        <span id="fecha"></span>
+        <span id="hora"></span>
+    </div>
+</body>
+</html>
