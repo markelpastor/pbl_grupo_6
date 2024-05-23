@@ -1,0 +1,3 @@
+Volver a hacer el for pero en este caso haciendo una máscara circular para:
+cuando voy a coger las 9 fotos para entrenar el modelo, coger círculos de estas, que es donde está la info del OD. - Luego tb hacer un preproccesing pasandole distintos filtros para quitar el ruido, gaussian, median...
+Y luego tb normalizar la imagen para aumentar el contraste entre la zona vascularizada y la no vascularizada
