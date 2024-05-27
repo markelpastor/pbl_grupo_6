@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pacientes.xslt"?>
+
+<GlaucoDtect_analysis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsdpacientes.xsd">
+
+	<Patients>
+
+		<Patient id="akv0543N">
+			<Hospital>Txagorritxu</Hospital>
+			<Doctor>Dr. Alejandro Ramírez</Doctor>
+			<fecha_diagnóstico>2022-05-06</fecha_diagnóstico>
+			<Glaucoma>Si</Glaucoma>
+			<Calidad_imagen>Calidad correcta</Calidad_imagen>
+			<Resultados_imagenes image="calidadcorrecta.jpg"/>  
+		</Patient>
+
+		<Patient id="akv0543A">
+			<Hospital>Cruces</Hospital>
+			<Doctor>Dra. Laura Martínez</Doctor>				
+			<fecha_diagnóstico>2024-05-06</fecha_diagnóstico>
+			<Glaucoma>No</Glaucoma>
+			<Calidad_imagen>Ruido</Calidad_imagen>
+			<Resultados_imagenes image="ruido.jpg"/>  
+		</Patient>
+
+		<Patient id="akv0543P">
+			<Hospital>Txagorritxu</Hospital>
+			<Doctor>Dr. Carlos Fernández</Doctor>	
+			<fecha_diagnóstico>2023-05-06</fecha_diagnóstico>
+			<Glaucoma>No</Glaucoma>
+			<Calidad_imagen>Bajo contraste</Calidad_imagen>
+			<Resultados_imagenes image="bajocontraste.jpg"/>  
+		</Patient>
+
+	</Patients>
+
+</GlaucoDtect_analysis>

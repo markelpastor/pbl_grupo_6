@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="GlaucoDtect_analysis">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Patients">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Patient" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Hospital" type="xs:string"/>
+										<xs:element name="Doctor" type="xs:string"/>
+										<xs:element name="fecha_diagnóstico" type="xs:date"/>
+										<xs:element name="Glaucoma" type="xs:string"/>
+										<xs:element name="Calidad_imagen" type="xs:string"/>
+										<xs:element name="Resultados_imagenes">
+											<xs:complexType>
+												<xs:attribute name="image" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="id" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:pattern value="[a-z]{3}[0-9]{4}[A-Z]"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
