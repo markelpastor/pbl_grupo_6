@@ -7,6 +7,24 @@
                 <link rel="stylesheet" type="text/css" href="xslt estilo.css"/>
             </head>
 				<body>
+					<header>
+						<a href="#" class="logo">    
+							<img src="images/VisionHealth.jpg" class="logo-img" alt="Vision Health Logo"></img>
+						</a>						
+						<nav class="navbar">
+							<ul>
+								<li><a href="index.html" class="active"><b>Inicio</b></a></li>
+								<li><a href="index.html">Nosotros</a></li>
+								<li><a href="index.html">Productos</a></li>
+								<li><a href="index.html">Dónde encontrarnos</a></li>
+								<li><a href="index.html">Contácto</a></li>
+								<li><a href="index.html">Opiniones de usuarios</a></li>
+								<li><a href="log in.html"><b>Iniciar Sesión</b></a></li>
+							</ul>
+							
+						</nav>
+							<div class="fas fa-bars"></div>		
+					</header>
 				<h1>GlaucoDtect_analysis</h1>
 					<table border="1">
 						<tr>
