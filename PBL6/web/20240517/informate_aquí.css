@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
+    text-transform: none;
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -142,7 +142,7 @@ section {
 /* General */
 * {
     font-family: 'Raleway', sans-serif;
-    text-transform: capitalize;
+    text-transform: none;
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -240,12 +240,12 @@ section {
 .testimony__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
 .testimony__item {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background: var(--color-bg-testimonio);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -267,8 +267,8 @@ section {
 }
 
 .testimony__img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #fff;

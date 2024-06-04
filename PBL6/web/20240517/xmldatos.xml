@@ -3,35 +3,258 @@
 
 <GlaucoDtect_analysis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsdpacientes.xsd">
 
-	<Patients>
+	<Pacientes>
 
-		<Patient id="akv0543N">
-			<Hospital>Txagorritxu</Hospital>
-			<Doctor>Dr. Alejandro Ramírez</Doctor>
-			<fecha_diagnóstico>2022-05-06</fecha_diagnóstico>
-			<Glaucoma>Si</Glaucoma>
-			<Calidad_imagen>Calidad correcta</Calidad_imagen>
-			<Resultados_imagenes image="calidadcorrecta.jpg"/>  
-		</Patient>
+		<Paciente id="akv0543N">
+			<Genero>Hombre</Genero>
+			<Edad>65</Edad>
+			<Centro centro="Txagorritxu">
+				<Especialista>Dr. Alejandro Ramírez</Especialista>
+				<Fecha_entrada>2023-08-06</Fecha_entrada>
+				<Comentarios_especialista>Paciente con historial de presión intraocular elevada</Comentarios_especialista>
+				<fecha_diagnóstico>2023-08-07</fecha_diagnóstico>
+				<Glaucoma>Si</Glaucoma>
+				<Resultados_glaucoma>
+					<Imagen image="calidadcorrecta.jpg"/> 
+					<Datos>
+						<Dim_copa_ocular>0.6 mm</Dim_copa_ocular>
+						<Dim_disco_ocular>1.5mm</Dim_disco_ocular>
+						<Ratio>0.4</Ratio>
+					</Datos>
+				</Resultados_glaucoma>
+				<Tratamiento>Latanoprost</Tratamiento>
+				<Dosis>1 gota en cada ojo una vez al día</Dosis>
+				<Historial_Médico_Familiar>
+					<Antecedentes>Padre con glaucoma</Antecedentes>				
+				</Historial_Médico_Familiar>
+			</Centro>
+		</Paciente>
+		
+		<Paciente id="jkl9876N">
+		    <Genero>Mujer</Genero>
+            <Edad>72</Edad>
+            <Centro centro="COSS">
+                <Especialista>Dra. Laura García</Especialista>
+                <Fecha_entrada>2023-09-12</Fecha_entrada>
+                <Comentarios_especialista>Paciente presenta visión borrosa y dolor ocular</Comentarios_especialista>
+                <fecha_diagnóstico>2023-09-13</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/>
+                    <Datos>
+                        <Dim_copa_ocular>0.7 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.4 mm</Dim_disco_ocular>
+                        <Ratio>0.5</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Timolol</Tratamiento>
+                <Dosis>1 gota en cada ojo dos veces al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Abuela con glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
 
-		<Patient id="akv0543A">
-			<Hospital>Cruces</Hospital>
-			<Doctor>Dra. Laura Martínez</Doctor>				
-			<fecha_diagnóstico>2024-05-06</fecha_diagnóstico>
-			<Glaucoma>No</Glaucoma>
-			<Calidad_imagen>Ruido</Calidad_imagen>
-			<Resultados_imagenes image="ruido.jpg"/>  
-		</Patient>
+        <Paciente id="pqr1234S">
+		    <Genero>Mujer</Genero>
+            <Edad>58</Edad>
+            <Centro centro="Cruces">
+                <Especialista>Dr. Iñigo Lekue</Especialista>
+                <Fecha_entrada>2023-12-05</Fecha_entrada>
+                <Comentarios_especialista>Paciente sin síntomas significativos de glaucoma, revisión rutinaria</Comentarios_especialista>
+                <fecha_diagnóstico>N/A</fecha_diagnóstico>
+                <Glaucoma>No</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/>
+                    <Datos>
+                        <Dim_copa_ocular>0.3 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.6 mm</Dim_disco_ocular>
+                        <Ratio>0.2</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Ninguno</Tratamiento>
+                <Dosis>N/A</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Sin antecedentes relevantes</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
 
-		<Patient id="akv0543P">
-			<Hospital>Txagorritxu</Hospital>
-			<Doctor>Dr. Carlos Fernández</Doctor>	
-			<fecha_diagnóstico>2023-05-06</fecha_diagnóstico>
-			<Glaucoma>No</Glaucoma>
-			<Calidad_imagen>Bajo contraste</Calidad_imagen>
-			<Resultados_imagenes image="bajocontraste.jpg"/>  
-		</Patient>
+	
+		<Paciente id="bhy1234M">
+		    <Genero>Mujer</Genero>
+            <Edad>58</Edad>
+            <Centro centro="Cruces">
+                <Especialista>Dra. María González</Especialista>
+                <Fecha_entrada>2024-02-15</Fecha_entrada>
+                <Comentarios_especialista>Pérdida de visión periférica y dolor ocular</Comentarios_especialista>
+                <fecha_diagnóstico>2024-02-16</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.7 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.6 mm</Dim_disco_ocular>
+                        <Ratio>0.44</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Timolol</Tratamiento>
+                <Dosis>1 gota en cada ojo dos veces al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Madre con glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
 
-	</Patients>
+				
+		<Paciente id="cjr0987P">
+		    <Genero>Hombre</Genero>
+            <Edad>52</Edad>
+            <Centro centro="COSS">
+                <Especialista>Dr. Javier Martínez</Especialista>
+                <Fecha_entrada>2024-03-10</Fecha_entrada>
+                <Comentarios_especialista>Alta presión intraocular detectada en chequeo rutinario</Comentarios_especialista>
+                <fecha_diagnóstico>2024-03-10</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.65 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.4 mm</Dim_disco_ocular>
+                        <Ratio>0.46</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Brimonidina</Tratamiento>
+                <Dosis>1 gota en cada ojo dos veces al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Abuelo materno con glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
 
+		<Paciente id="djw8765K">
+			<Genero>Mujer</Genero>
+            <Edad>60</Edad>
+            <Centro centro="Txagorritxu">
+                <Especialista>Dra. Carmen López</Especialista>
+                <Fecha_entrada>2024-01-20</Fecha_entrada>
+                <Comentarios_especialista>Paciente refiere visión borrosa y halos alrededor de luces</Comentarios_especialista>
+                <fecha_diagnóstico>2024-01-21</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.55 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.3 mm</Dim_disco_ocular>
+                        <Ratio>0.42</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Travoprost</Tratamiento>
+                <Dosis>1 gota en cada ojo una vez al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>No hay antecedentes familiares de glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
+		
+		<Paciente id="ewr6543L">
+			<Genero>Hombre</Genero>
+            <Edad>50</Edad>
+            <Centro centro="Txagorritxu">
+                <Especialista>Dr. Luis Gómez</Especialista>
+                <Fecha_entrada>2024-05-01</Fecha_entrada>
+                <Comentarios_especialista>Paciente sin síntomas, pero con presión intraocular elevada</Comentarios_especialista>
+                <fecha_diagnóstico>2024-05-03</fecha_diagnóstico>
+                <Glaucoma>No</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.4 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.2 mm</Dim_disco_ocular>
+                        <Ratio>0.33</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>N/A</Tratamiento>
+                <Dosis>N/A</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>No hay antecedentes familiares de glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
+
+        <Paciente id="flp3456M">
+		    <Genero>Mujer</Genero>
+            <Edad>55</Edad>
+            <Centro centro="Txagorritxu">
+                <Especialista>Dra. Laura Pérez</Especialista>
+                <Fecha_entrada>2024-04-15</Fecha_entrada>
+                <Comentarios_especialista>Pérdida de visión periférica en ojo derecho</Comentarios_especialista>
+                <fecha_diagnóstico>2024-04-16</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.7 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.6 mm</Dim_disco_ocular>
+                        <Ratio>0.44</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Dorzolamida</Tratamiento>
+                <Dosis>1 gota en ojo derecho dos veces al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Madre con glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
+		
+		<Paciente id="gtr6574P">
+			<Genero>Hombre</Genero>
+            <Edad>62</Edad>
+            <Centro centro="COSS">
+                <Especialista>Dra. Alicia Fernández</Especialista>
+                <Fecha_entrada>2024-05-15</Fecha_entrada>
+                <Comentarios_especialista>Pérdida de visión periférica en ojo izquierdo</Comentarios_especialista>
+                <fecha_diagnóstico>2024-05-16</fecha_diagnóstico>
+                <Glaucoma>Si</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.68 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.5 mm</Dim_disco_ocular>
+                        <Ratio>0.45</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>Bimatoprost</Tratamiento>
+                <Dosis>1 gota en ojo izquierdo una vez al día</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>Abuelo materno con glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
+
+        <Paciente id="hjk9832L">
+			<Genero>Mujer</Genero>
+            <Edad>54</Edad>
+            <Centro centro="Cruces">
+                <Especialista>Dr. Carlos Muñoz</Especialista>
+                <Fecha_entrada>2024-04-25</Fecha_entrada>
+                <Comentarios_especialista>Paciente con antecedentes de presión intraocular elevada sin otros síntomas</Comentarios_especialista>
+                <fecha_diagnóstico>2024-04-25</fecha_diagnóstico>
+                <Glaucoma>No</Glaucoma>
+                <Resultados_glaucoma>
+                    <Imagen image="calidadcorrecta.jpg"/> 
+                    <Datos>
+                        <Dim_copa_ocular>0.5 mm</Dim_copa_ocular>
+                        <Dim_disco_ocular>1.3 mm</Dim_disco_ocular>
+                        <Ratio>0.38</Ratio>
+                    </Datos>
+                </Resultados_glaucoma>
+                <Tratamiento>N/A</Tratamiento>
+                <Dosis>N/A</Dosis>
+                <Historial_Médico_Familiar>
+                    <Antecedentes>No hay antecedentes familiares de glaucoma</Antecedentes>
+                </Historial_Médico_Familiar>
+            </Centro>
+        </Paciente>
+	</Pacientes>
 </GlaucoDtect_analysis>
