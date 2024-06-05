@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #02355e;
+    color: #fff;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background: #d9ebf5;
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+    display: inline;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+}
+
+header .navbar ul li .active {
+    margin-top: 50px;
+}
+
+header .navbar ul li a:hover {
+    color: #02355e;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-img {
+    height: 50px;
+    width: auto;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #02355e;
+    cursor: pointer;
+    display: inline;
+    transition: .2s;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #d9ebf5;
+    padding-top: 70px; 
+	margin-top: 70px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+
+.about {
+    background-color: #f9f9f9;
+    border-radius: 5rem;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	min-height: 400px;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about__row {
+    display: flex;
+    align-items: center;
+}
+
+.fas.about__icon {
+    font-size: 70px;
+	margin-left: 70px;
+}
+
+
+.about__paragraph {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.subtitulo {
+    color: #02355e;
+    font-weight: bold;
+}
+
+
+
+section {
+    padding: 60px 20px;
+}
+
+
+.subtitle {
+    color: var(--color-titulo1);
+    font-size: 4rem;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.testimony__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimony__item {
+    width: 100%;
+    margin: 0 auto;
+    background:#f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px 25px;
+    color: var(--color-texto);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimony__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimony__person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimony__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimony__texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.testimony__verification {
+    color: #02355e;
+    font-weight: 600;
+}
+
+.testimony__review {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
+.footer {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	text-transform: none;
+}
+
+.footer .icons {
+	padding: 3rem 0;
+}
+.footer .icons a {
+    height: 6rem;
+    width: 6rem; 
+    line-height: 6rem; 
+    text-align: center;
+    border-radius: 50%;
+    color:#c63bfa;
+    border: .2rem solid #c63bfa;
+    font-size: 3rem;
+    margin: 0 1rem;
+    transition: .2s linear;
+    text-transform: none;
+}
+
+.footer .icons a:hover{
+	color:#fff;
+	background:#ff046f;
+	border-color: #ff046f;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GLUACO DTECT</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="stylesheet" href="style-productos.css">
+		<link rel="icon" href="images/logo empresa recortado.jpg" type="images/logo empresa recortado.jpg">
+		<style>
+			#downloadButton[disabled] {
+				pointer-events: none;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+
+	<body>
+	<header>
+		<a href ='#' class='logo'><img src="images/VisionHealth.jpg" class="logo-img"></a>
+
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html#home">Inicio</a></li>
+				<li><a href="index.html#about">Nosotros</a></li>
+				<li><a href="#products" class="active"><b>Productos</b></a></li>
+				<li><a href="index.html#location">Dónde encontrarnos</a></li>
+				<li><a href="index.html#contact">Contácto</a></li>
+				<li><a href="index.html#reviews">Opiniones de usuarios</a></li>
+				<li><a href="log in.html"><b>Iniciar Sesión</b></a></li>
+			</ul>
+		</nav>
+		<div class="fas fa-bars"></div>
+	</header>
+	<section>
+		<h1 class="heading">Instrucciones de Uso</h1>
+		<div class="instru">
+			<embed src="Instrucciones de uso GLAUCO DTECT.pdf" type="application/pdf"/>
+			<label for="checkbox">
+				<input type="checkbox" id="checkbox"> He leído y acepto las instrucciones
+			</label>
+		</div>
+		<a id="downloadLink" href="#" target="_blank">
+			<button id="downloadButton" disabled>Descargar</button>
+		</a>
+	</section>
+	<section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/?locale=eu_ES" class="fab fa-facebook-f"></a>
+			<a href="https://x.com/home?lang=ES" class="fab fa-twitter"></a>
+			<a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+			<a href="https://www.reddit.com/" class="fab fa-reddit"></a>
+		</div>
+	</section>
+
+	<script>
+		document.getElementById("checkbox").addEventListener("change", function() {
+			var checkBox = document.getElementById("checkbox");
+			var downloadButton = document.getElementById("downloadButton");
+			var downloadLink = document.getElementById("downloadLink");
+
+			if (checkBox.checked == true){
+				downloadButton.disabled = false;
+				downloadLink.href = "log in product.html";  // Ruta al archivo que se va a abrir
+			} else {
+				downloadButton.disabled = true;
+				downloadLink.href = "#";  // Elimina la ruta del archivo
+			}
+		});
+	</script>
+</body>
+
+</html>
