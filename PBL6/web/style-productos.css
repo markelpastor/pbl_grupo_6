@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration:none;
+    outline: none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+*::selection {
+    background:#02355e;
+    color:#fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x:hidden;
+    text-transform: none;
+}
+
+body {
+    background: #d9ebf5;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #02355e;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    text-transform: none;
+}
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+}
+header {
+    width:100%;
+    background: #d9ebf5;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+header .navbar ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style:none;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+    display: inline;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    text-transform: none;
+}
+header .navbar ul li .active{
+    margin-top: 50px;
+}
+header .navbar ul li a:hover {
+    color:#02355e;
+}
+header .logo {
+    display: flex;
+    align-items:center;
+}
+header .logo-img{
+    height: 50px;
+    width: auto;
+}
+header .fa-bars {
+    font-size:3rem;
+    color:#02355e;
+    cursor:pointer;
+    display:inline;
+    transition: .2s;
+    text-transform: none;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.instru {
+    margin-bottom: 20px;
+    text-align: center; /* Alinea todo el contenido al centro */
+}
+
+.instru embed {
+    width: 50%;
+    height: 1000px; /* Ajusta la altura según sea necesario */
+    margin: 0 auto; /* Centra el embed */
+}
+
+.instru label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px; 
+	text-transform: none;
+}
+
+.instru input[type="checkbox"] {
+    display: inline-block; /* Cambia a en línea para alinear con el texto */
+    width: 20px; /* Tamaño del checkbox */
+    height: 20px; /* Tamaño del checkbox */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+#downloadButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: #007bff; /* Color original del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 650px;
+}
+
+#downloadButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#checkbox:checked + label #downloadButton {
+    background-color: #28a745; /* Cambia el color del botón cuando el checkbox está marcado */
+}
+
+.footer {
+    text-align: center;
+    text-transform: none;
+}
+
+.footer .icons {
+    padding: 3rem 0;
+}
+.footer .icons a {
+    height: 6rem;
+    width: 6rem; 
+    line-height: 6rem; 
+    text-align: center;
+    border-radius: 50%;
+    color:#c63bfa;
+    border: .2rem solid #c63bfa;
+    font-size: 3rem;
+    margin: 0 1rem;
+    transition: .2s linear;
+    text-transform: none;
+}
+
+.footer .icons a:hover{
+    color:#fff;
+    background:#ff046f;
+    border-color: #ff046f;
+}
