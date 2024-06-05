@@ -77,6 +77,15 @@
 						</xsl:for-each>					
 					</table>
 				</body>
+				<section class="footer">
+					<div class="icons">
+						<a href="https://www.facebook.com/?locale=eu_ES" class="fab fa-facebook-f"></a>
+						<a href="https://x.com/home?lang=ES" class="fab fa-twitter"></a>
+						<a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+						<a href="https://www.reddit.com/" class="fab fa-reddit"></a>
+					
+					</div>
+				</section>
 			</html>
 	</xsl:template>
 </xsl:stylesheet>
