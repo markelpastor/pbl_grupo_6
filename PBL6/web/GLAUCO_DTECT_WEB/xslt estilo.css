@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
 
-header {
-	width:100%;
-	background: #d9ebf5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 2rem;
-	z-index: 1000;
-	transition: .2s;
+* {
+	font-family: 'Poppins', sans-serif;
+	text-transform: none;
+	text-decoration:none;
+	outline: none;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
 }
+*::selection {
+	background:#02355e;
+	color:#fff;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x:hidden;
+	text-transform: none;
+}
+
+body {
+	background: #f9f9f9;
+}
+
 .heading {
 	font-size: 4rem;
 	color: #02355e;
@@ -20,6 +32,7 @@ header {
 	padding: 6rem 1rem 0 0;
 	letter-spacing: .2rem;
 	font-weight: 500;
+	text-transform: none;
 }
 .title {
 	padding: 0 1rem;
@@ -27,8 +40,19 @@ header {
 	text-align: center;
 	font-weight: 400;
 	color: #fff;
+	text-transform: none;
 }
-
+header {
+	width:100%;
+	background: #d9ebf5;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	z-index: 1000;
+	transition: .2s;
+}
 
 header .navbar ul{
 	display:flex;
@@ -48,6 +72,7 @@ header .navbar ul li a{
 	text-decoration: none;
 	color: #000;
 	padding: 10px 15px;
+	text-transform: none;
 }
 header .navbar ul li .active{
 	margin-top: 50px;
@@ -69,28 +94,17 @@ header .fa-bars {
 	cursor:pointer;
 	display:inline;
 	transition: .2s;
+	text-transform: none;
 }
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-body {
-    background: #FFFFFF;
-}
-
-/* Estilo para la tabla */
-
-
 
 table {
     width: 80%;
     margin: 2rem auto;
     border-collapse: collapse;
     box-shadow: 0 0 1rem rgba(0,0,0,.1);
-	 justify-content: center;
-    margin-top: 150px;
+	justify-content: center;
+    margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 table thead {
@@ -116,18 +130,10 @@ table tbody td {
     text-align: center;
     font-size: 1.4rem;
 }
-
-.heading {
-    font-size: 4rem;
-    color: #02355e;
-    text-align: center;
-    padding: 6rem 1rem 0 0;
-    letter-spacing: .2rem;
-    font-weight: 500;
-}
 .footer {
 	text-align: center;
 	text-transform: none;
+	background-color: #d9ebf5
 }
 
 .footer .icons {
@@ -152,3 +158,4 @@ table tbody td {
 	background:#ff046f;
 	border-color: #ff046f;
 }
+
